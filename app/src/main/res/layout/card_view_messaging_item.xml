@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:foreground="?android:selectableItemBackground"
+    android:focusable="true"
+    android:layout_marginStart="6dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:visibility="visible"
+        android:id="@+id/private_message_item_receive_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/profile_img" />
+
+    <TextView
+        android:id="@+id/private_message_item_receive"
+        style="@style/AppTextViewDefault"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="6dp"
+        android:visibility="visible"
+        android:layout_toEndOf="@+id/private_message_item_receive_img"
+        android:background="@drawable/bg_round_gray_lite"
+        android:hint="receive"
+        android:gravity="start" />
+
+    <TextView
+        android:id="@+id/private_message_item_receive_time"
+        style="@style/AppTextViewSmall"
+        android:layout_below="@+id/private_message_item_receive"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="42dp"
+        android:visibility="gone"
+        android:text="16-12-2018"/>
+
+    <TextView
+        android:id="@+id/private_message_item_send"
+        style="@style/AppTextViewDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:visibility="visible"
+        android:textSize="18sp"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/bg_round_primary"
+        android:hint="send"
+        android:gravity="end" />
+
+    <TextView
+        android:id="@+id/private_message_item_send_time"
+        style="@style/AppTextViewSmall"
+        android:layout_below="@+id/private_message_item_send"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        android:text="16-12-2018"/>
+
+</RelativeLayout>

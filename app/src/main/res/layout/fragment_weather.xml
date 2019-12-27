@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".fragments.WeatherFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="?android:selectableItemBackground"
+            android:focusable="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="6dp"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorSkyLight"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_current_weather_icon"
+                            android:layout_width="70dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/ic_cloud_done"/>
+
+                        <TextView
+                            android:id="@+id/tv_current_weather_type"
+                            style="@style/AppTextViewCenter"
+                            android:textColor="@color/colorWhite"
+                            android:text="Haze"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.7"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_current_weather_today"
+                            style="@style/AppTextViewSmall"
+                            android:gravity="center"
+                            android:textColor="@color/colorWhite"
+                            android:text="Today"/>
+
+                        <TextView
+                            android:id="@+id/tv_current_weather_temp"
+                            style="@style/AppTextViewCenter"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="30sp"
+                            android:text="25 \u00B0C"/>
+
+                        <TextView
+                            android:id="@+id/tv_current_weather_locality"
+                            style="@style/AppTextViewCenter"
+                            android:textColor="@color/colorWhite"
+                            android:text="Dhaka"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/colorSkyLight"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/AppTextViewCenter"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        android:text="Details"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorWhite"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/AppTextViewSmall"
+                                    android:textColor="@color/colorWhite"
+                                    android:textAllCaps="true"
+                                    android:layout_width="wrap_content"
+                                    android:text="Wind Speed"/>
+
+                                <TextView
+                                    android:id="@+id/tv_current_weather_wind_speed"
+                                    style="@style/AppTextViewCenter"
+                                    android:textColor="@color/colorWhite"
+                                    android:hint="5.6km/h"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:background="@color/colorWhite"
+                                android:layout_height="match_parent" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/AppTextViewSmall"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorWhite"
+                                    android:layout_width="wrap_content"
+                                    android:text="Humidity"/>
+
+                                <TextView
+                                    android:id="@+id/tv_current_weather_humidity"
+                                    style="@style/AppTextViewCenter"
+                                    android:textColor="@color/colorWhite"
+                                    android:hint="75"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:background="@color/colorWhite"
+                            android:layout_height="1dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/AppTextViewSmall"
+                                    android:textColor="@color/colorWhite"
+                                    android:textAllCaps="true"
+                                    android:layout_width="wrap_content"
+                                    android:text="Pressure"/>
+
+                                <TextView
+                                    android:id="@+id/tv_current_weather_pressure"
+                                    style="@style/AppTextViewCenter"
+                                    android:textColor="@color/colorWhite"
+                                    android:hint="1000 mb"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:background="@color/colorWhite"
+                                android:layout_height="match_parent" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/AppTextViewSmall"
+                                    android:textColor="@color/colorWhite"
+                                    android:textAllCaps="true"
+                                    android:layout_width="wrap_content"
+                                    android:text="Visibility"/>
+
+                                <TextView
+                                    android:id="@+id/tv_current_weather_visibility"
+                                    style="@style/AppTextViewCenter"
+                                    android:textColor="@color/colorWhite"
+                                    android:hint="3500"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_forecast_weather_title"
+                style="@style/AppTextViewCenter"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:padding="5dp"
+                android:text="5 Days Forecast"
+                android:textStyle="bold|italic"
+                android:background="@color/colorBlue"
+                android:textColor="@color/colorWhite"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_weather_forcast_list"
+                android:layout_below="@+id/tv_forecast_weather_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+            <TextView
+                android:id="@+id/tv_forecast_weather_error"
+                style="@style/AppTextViewCenter"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorBlue"
+                android:textStyle="bold|italic"
+                android:text="Forecast Weather List \n is Empty"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

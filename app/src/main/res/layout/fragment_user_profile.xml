@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".fragments.UserProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/profile_bg_img" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_user_profile_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="75dp"
+                android:src="@drawable/profile_img"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorAccent"/>
+
+            <LinearLayout
+                android:id="@+id/lin_lay_user_profile_name"
+                android:layout_below="@+id/civ_user_profile_image"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_user_profile_name"
+                    style="@style/AppTextViewCenter"
+                    android:layout_width="wrap_content"
+                    android:hint="User Name"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_user_profile_icon_gender_male"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:visibility="gone"
+                    android:src="@drawable/gender_male"/>
+                <ImageView
+                    android:id="@+id/iv_user_profile_icon_gender_female"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:visibility="gone"
+                    android:src="@drawable/gender_female"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_user_profile_email"
+                style="@style/AppTextViewCenter"
+                android:layout_below="@+id/lin_lay_user_profile_name"
+                android:hint="abc..@gmail.com"/>
+
+            <Button
+                android:id="@+id/btn_user_profile_send_message"
+                style="@style/AppButtonDefault"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_user_profile_email"
+                android:layout_width="120pt"
+                android:text="Send Message" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

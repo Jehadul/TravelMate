@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "513685822405",
+    "firebase_url": "https://travelmate-dd70b.firebaseio.com",
+    "project_id": "travelmate-dd70b",
+    "storage_bucket": "travelmate-dd70b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:513685822405:android:4a7abb8218dba18db249ac",
+        "android_client_info": {
+          "package_name": "com.jihad.app.travelmate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "513685822405-kvh8q8rvt3g1tsfkqi43alk0nf62vgd5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jihad.app.travelmate",
+            "certificate_hash": "fd1422a087498060611b3b6cb8630c96c634ebb0"
+          }
+        },
+        {
+          "client_id": "513685822405-duk8lfmukcdg4gkrrr3obacunshvaajs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxlKCxPnCwEoDEBO-0mk0MNDozMZwCrbY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "513685822405-duk8lfmukcdg4gkrrr3obacunshvaajs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

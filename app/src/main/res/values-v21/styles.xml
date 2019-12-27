@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="AppThemeBase">
+
+        <!-- only for Lollipop(21) and above version -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+    </style>
+
+    <!-- Add Default Button some device not support-->
+    <!--<style name="AppButtonDefault" parent="AppLargeText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:background">@drawable/button_selector_default</item>
+    </style>
+
+    <style name="AppButtonSuccess" parent="AppButtonDefault">
+        <item name="android:background">@drawable/button_selector_success</item>
+    </style>
+
+    <style name="AppButtonDanger" parent="AppButtonDefault">
+        <item name="android:background">@drawable/button_selector_danger</item>
+    </style>-->
+
+    <style name="AppButtonDefault" parent="AppLargeText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:background">@drawable/button_default_bg</item>
+    </style>
+
+    <style name="AppButtonSuccess" parent="AppButtonDefault">
+        <item name="android:background">@drawable/button_success_bg</item>
+    </style>
+
+    <style name="AppButtonDanger" parent="AppButtonDefault">
+        <item name="android:background">@drawable/button_danger_bg</item>
+    </style>
+
+
+</resources>

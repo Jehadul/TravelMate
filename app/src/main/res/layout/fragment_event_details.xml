@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".fragments.EventDetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_event_detail_destination"
+                style="@style/AppTextViewCenter"
+                android:text="Destination" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_event_detail_start_date"
+                    style="@style/AppTextViewSmall"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.45"
+                    android:gravity="end"
+                    android:hint="Start Date" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text=":"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_event_detail_end_date"
+                    style="@style/AppTextViewSmall"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.45"
+                    android:gravity="start"
+                    android:hint="End Date" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/AppTextViewDefault"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.45"
+                    android:gravity="end"
+                    android:text="Budget Status"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text=":"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_event_detail_budget_status"
+                    style="@style/AppTextViewDefault"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.45"
+                    android:text="2000/5000"/>
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/pb_event_detail_progress_bar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:max="100"
+                android:progress="10" />
+
+            <TextView
+                android:id="@+id/tv_event_detail_progress_percentage"
+                style="@style/AppTextViewSmall"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="10%"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_event_details_title"
+                style="@style/AppTextViewCenter"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:padding="5dp"
+                android:text="Expense Details"
+                android:textStyle="bold|italic"
+                android:background="@color/colorBlue"
+                android:textColor="@color/colorWhite"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_event_expense_details_list"
+                android:layout_below="@+id/tv_event_details_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+            <TextView
+                android:id="@+id/tv_event_details_error"
+                style="@style/AppTextViewCenter"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorBlue"
+                android:textStyle="bold|italic"
+                android:text="Expense Details List\n is Empty"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_event_expense_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_add_white" />
+
+</FrameLayout>

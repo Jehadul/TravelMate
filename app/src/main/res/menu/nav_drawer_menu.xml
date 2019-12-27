@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_item_home"
+        android:title="Home"
+        android:checkable="true"
+        android:icon="@drawable/ic_home" />
+
+    <group android:id="@+id/group_tour"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_item_events"
+            android:title="Events"
+            android:icon="@drawable/ic_event" />
+
+        <item
+            android:id="@+id/nav_item_gallery"
+            android:title="Gallery"
+            android:icon="@drawable/ic_photo" />
+    </group>
+
+    <group android:id="@+id/group_communication"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_item_friends"
+            android:title="Friends"
+            android:icon="@drawable/ic_people_group" />
+
+        <item
+            android:id="@+id/nav_item_message"
+            android:title="Message"
+            android:icon="@drawable/ic_message" />
+    </group>
+
+    <group android:id="@+id/group_surrounding"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_item_weather"
+            android:title="Weather"
+            android:icon="@drawable/ic_cloud_done" />
+
+        <item
+            android:id="@+id/nav_item_location"
+            android:title="Location"
+            android:icon="@drawable/ic_location" />
+    </group>
+
+    <group android:id="@+id/group_setting"
+            android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_item_setting"
+            android:title="Settings"
+            android:icon="@drawable/ic_settings" />
+
+        <item
+            android:id="@+id/nav_item_logout"
+            android:title="Log Out"
+            android:icon="@drawable/ic_lock_open" />
+    </group>
+
+</menu>

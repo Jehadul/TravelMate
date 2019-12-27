@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Travel Mate</string>
+
+
+    <string name="nav_drawer_open">Open</string>
+    <string name="nav_drawer_close">Close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="weather_api_key">380199723cebdb85ef2e16cc30cee5b6</string>
+
+    <string name="google_map_api_key">AIzaSyB6fE0RnRu68Fth1r25Act0sb0wJGBsUFM</string>
+
+    <string name="google_add_mob_key">ca-app-pub-6069934421651847~3664092277</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

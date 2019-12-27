@@ -1,0 +1,87 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeBase" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Add fontFamily -->
+    <style name="AppFont">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!-- Add text Color -->
+    <style name="AppFontColorPrimary" parent="AppFont">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <!-- Add Text Size -->
+    <style name="AppSmallText" parent="AppFontColorPrimary">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppMediumText" parent="AppFontColorPrimary">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="AppLargeText" parent="AppFontColorPrimary">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="AppExtraLargeText" parent="AppFontColorPrimary">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+
+    <!-- Add Text View -->
+    <style name="AppTextViewSmall" parent="AppSmallText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTextViewDefault" parent="AppMediumText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTextViewCenter" parent="AppTextViewDefault">
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <!-- Add Edit Text -->
+    <style name="AppEditTextDefault" parent="AppMediumText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <!-- Add RadioButton -->
+    <style name="AppRadioButtonDefault" parent="AppMediumText">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <!-- Add Default Button -->
+    <style name="AppButtonDefault" parent="AppLargeText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginStart">6dp</item>
+        <item name="android:layout_marginEnd">6dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="AppButtonSuccess" parent="AppButtonDefault">
+        <item name="android:textColor">@color/colorGreen</item>
+    </style>
+
+    <style name="AppButtonDanger" parent="AppButtonDefault">
+        <item name="android:textColor">@color/colorPink</item>
+    </style>
+
+
+</resources>

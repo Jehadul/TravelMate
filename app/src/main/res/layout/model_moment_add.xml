@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_moment_modal_title"
+        style="@style/AppTextViewCenter"
+        android:padding="6dp"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/colorBlue"
+        android:textStyle="bold|italic"
+        android:textSize="24sp"
+        android:text="Modal Title"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_moment_modal_title"
+        android:background="@color/colorAccent"/>
+
+    <ScrollView
+        android:id="@+id/event_modal_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_below="@+id/tv_moment_modal_title"
+        android:layout_above="@+id/moment_modal_footer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_moment_pic"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/bg_square_border"
+                android:src="@drawable/ic_photo_camera"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_square_border"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spin_moment_events"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_moment_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:padding="6dp"
+                android:drawableStart="@drawable/ic_description"
+                android:background="@drawable/bg_square_border"
+                android:hint="Remark"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/moment_modal_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_moment_delete"
+            style="@style/AppButtonDanger"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:text="Delete"/>
+        <Button
+            android:id="@+id/btn_moment_update"
+            style="@style/AppButtonDefault"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:text="Update"/>
+        <Button
+            android:id="@+id/btn_moment_save"
+            style="@style/AppButtonSuccess"
+            android:layout_weight="1"
+            android:text="Save"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

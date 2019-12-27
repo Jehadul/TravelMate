@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".fragments.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_home_show_date"
+            style="@style/AppTextViewSmall"
+            android:text=""
+            android:hint="Tuesday 04 Dec, 2018"
+            android:gravity="end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            style="@style/AppTextViewCenter"
+            android:text="You are in"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/tv_home_user_location"
+            style="@style/AppTextViewCenter"
+            android:text="Dhaka, Bangladesh" />
+
+        <TextView
+            android:id="@+id/tv_home_user_address"
+            style="@style/AppTextViewSmall"
+            android:gravity="center"
+            android:text="Dhaka City" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="6dp"
+            android:layout_height="2dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/iv_home_current_event_title"
+                style="@style/AppTextViewCenter"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:padding="5dp"
+                android:text="Current &amp; Upcoming Events"
+                android:textStyle="bold|italic"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorBlue" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_upcoming_event_view_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_home_current_event_title"/>
+
+            <TextView
+                android:id="@+id/tv_home_current_event_error"
+                style="@style/AppTextViewCenter"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorBlue"
+                android:textStyle="bold|italic"
+                android:text="You have \n no \n Current or Upcoming Events"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

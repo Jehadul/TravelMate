@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.LocationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/google_map"
+            tools:context=".MapsActivity"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorWhite"
+            android:elevation="2dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/google_map_search_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:background="@drawable/bg_square_white_border"
+                android:imeOptions="actionSearch"
+                android:hint="Search Place"/>
+
+            <ImageView
+                android:id="@+id/google_map_search_btn"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/places_ic_search"/>
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="120dp"
+            android:layout_marginEnd="12dp"
+            android:background="@color/colorGrayLight"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            app:cardCornerRadius="2dp"
+            android:elevation="2dp">
+
+            <ImageView
+                android:id="@+id/google_map_nearby_search_btn"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:padding="2dp"
+                android:src="@drawable/ic_nearby_places" />
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</FrameLayout>

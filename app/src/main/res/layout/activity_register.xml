@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegisterActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                style="@style/AppTextViewCenter"
+
+                android:text="Travel Mate Registration"
+                android:textStyle="bold|italic"
+                android:textSize="26sp"
+                android:padding="5dp"
+                android:textColor="@color/colorBlue"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayoutRegFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etFullName"
+                    style="@style/AppEditTextDefault"
+                    android:hint="Full Name" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <RadioGroup
+                android:id="@+id/radioGroupGender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/AppTextViewDefault"
+                    android:layout_width="wrap_content"
+                    android:text="Gender :"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/radioBtnMale"
+                    style="@style/AppRadioButtonDefault"
+                    android:checked="true"
+                    android:layout_weight="1"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/radioBtnFemale"
+                    style="@style/AppRadioButtonDefault"
+                    android:layout_weight="1"
+                    android:text="Female" />
+            </RadioGroup>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayoutRegUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etRegUsername"
+                    style="@style/AppEditTextDefault"
+                    android:inputType="textEmailAddress"
+                    android:hint="Email" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayoutRegPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etRegPassword"
+                    style="@style/AppEditTextDefault"
+                    android:inputType="textPassword"
+                    android:hint="Password" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btnRegister"
+                style="@style/AppButtonSuccess"
+                android:layout_marginTop="20dp"
+                android:text="Registration" />
+
+            <TextView
+                android:id="@+id/linkTextTogoLogin"
+                android:text="Already have an Account?"
+                style="@style/AppTextViewCenter"
+                android:layout_marginTop="16sp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:clickable="true"
+                android:textStyle="bold|italic"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlue"
+                android:background="@drawable/bg_round_gray_lite"
+                android:padding="3dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_event_modal_title"
+        style="@style/AppTextViewCenter"
+        android:padding="6dp"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/colorBlue"
+        android:textStyle="bold|italic"
+        android:textSize="24sp"
+        android:text="Modal Title"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_event_modal_title"
+        android:background="@color/colorAccent"/>
+
+    <ScrollView
+        android:id="@+id/event_modal_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_below="@+id/tv_event_modal_title"
+        android:layout_above="@+id/event_modal_footer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_event_name"
+                style="@style/AppEditTextDefault"
+                android:padding="5dp"
+                android:drawableStart="@drawable/ic_tag_name"
+                android:background="@drawable/bg_square_border"
+                android:hint="Event Name"/>
+
+            <EditText
+                android:id="@+id/et_event_start_location"
+                style="@style/AppEditTextDefault"
+                android:layout_marginTop="6dp"
+                android:padding="5dp"
+                android:drawableStart="@drawable/ic_location"
+                android:background="@drawable/bg_square_border"
+                android:hint="Starting Location"/>
+
+            <EditText
+                android:id="@+id/et_event_destination"
+                style="@style/AppEditTextDefault"
+                android:layout_marginTop="6dp"
+                android:padding="5dp"
+                android:drawableStart="@drawable/ic_location"
+                android:background="@drawable/bg_square_border"
+                android:hint="Destination"/>
+
+            <EditText
+                android:id="@+id/et_event_estimated_budget"
+                style="@style/AppEditTextDefault"
+                android:layout_marginTop="6dp"
+                android:padding="5dp"
+                android:drawableStart="@drawable/ic_money_dolar"
+                android:background="@drawable/bg_square_border"
+                android:inputType="number"
+                android:hint="Estimated Budget"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/AppTextViewCenter"
+                    android:layout_weight="0.6"
+                    android:text="Start Date"
+                    android:padding="5dp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/et_event_start_date"
+                    style="@style/AppEditTextDefault"
+                    android:layout_weight="0.4"
+                    android:padding="5dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:background="@drawable/bg_square_border"
+                    android:drawableEnd="@drawable/ic_date_picker" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/AppTextViewCenter"
+                    android:layout_weight="0.6"
+                    android:text="End Date"
+                    android:padding="5dp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/et_event_end_date"
+                    style="@style/AppEditTextDefault"
+                    android:layout_weight="0.4"
+                    android:padding="5dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:background="@drawable/bg_square_border"
+                    android:drawableEnd="@drawable/ic_date_picker" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/event_modal_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_event_delete"
+            style="@style/AppButtonDanger"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:text="Delete"/>
+        <Button
+            android:id="@+id/btn_event_update"
+            style="@style/AppButtonDefault"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:text="Update"/>
+        <Button
+            android:id="@+id/btn_event_save"
+            style="@style/AppButtonSuccess"
+            android:layout_weight="1"
+            android:text="Save"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
