@@ -112,6 +112,7 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
+
     private void initFunction() {
 
         toolbar = findViewById(R.id.app_tool_bar);
